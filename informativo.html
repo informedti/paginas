@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Boletim Informativo</title>
+  <style>
+    /* Estilos CSS para o boletim informativo */
+   
+   body {
+      font-family: Arial, sans-serif;
+      
+      padding: 20px;
+      background-image: url("https://i.imgur.com/fCCSaLE.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+     
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.9);
+     
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+
+    h3 {
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.5;
+	  
+    }
+
+    ul {
+	 
+      line-height: 1.5;
+	  
+    }
+	
+	li:before {
+		
+		line-height: 1.5;
+    }
+  
+    .custom-marker::before {
+		content: "▶"; /* Define o marcador personalizado */
+		margin-right: 5px; /* Espaçamento entre o marcador e o texto */
+	 }
+	
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+	  font-size : 12px;
+    }
+
+    .justificado {
+      text-align: justify;
+    }
+	
+	.center {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 50%;
+	}
+	
+	.image-container {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	.zoomable-image {
+	  display: block;
+	  max-width: 100%;
+	  height: auto; /* Adicionado para manter a proporção correta da imagem */
+	}
+
+	.zoom-overlay {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background-color: rgba(0, 0, 0, 0);
+	  opacity: 0;
+	  transition: opacity 0.3s ease;
+	  pointer-events: none;
+	}
+
+	.image-container:hover .zoom-overlay {
+	  opacity: 1;
+	}
+
+	.image-container:hover .zoomable-image {
+	  transform: scale(1.7);
+	}
+
+	@media screen and (max-width: 768px) {
+	  .image-container:hover .zoomable-image {
+		transform: scale(1); /* Voltar ao tamanho original em telas menores */
+	  }
+	}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+  
+   
+   
+   <h3  align="center">Informativo da Diretoria de Tecnologia da Informação </h3>  
+    
+    <p class="justificado">Bem-vindo(a) ao nosso boletim informativo. Nesta edição, apresentamos a nova versão no GLPI - sistema de central de atendimento, que conta com novos recursos e interface gráfica, 
+	além do sistema de notificação de mensagens. Confira os destaques:</p>
+    
+     
+     <ul class="custom-marker">Reformulação da interface gráfica do GLPI</ul>
+		 
+	 <ul  style="color: #0000FF;">O que ganhamos?</ul>
+	 <ul>
+	  <li class="justificado">Interface gráfica mais leve e moderna, com dois novos modos de exibição de menu: vertical à esquerda / horizontal na parte superior;</li>
+	  
+	  <li>Melhor gestão de inventário dos ativos de TI:
+		<ul>
+		  <li>Computadores</li>
+		  <li>Monitores</li>
+		  <li>Softwares instalados</li>
+		  <li>Impressoras</li>
+		  <li>Licenças de software</li>
+		</ul>
+	  </li>
+	  
+	  <li class="justificado">Aprimoramento do Módulo de Helpdesk, permitindo mais controle para chamados, tarefas, problemas e otimização dos fluxos de trabalho.</li>
+	</ul>
+	
+	<ul> <span style="color: blue;">Público-alvo:</span><span style="color: black;"> Todos os servidores da Alba</span></ul>
+	 
+	  <p align="center" style="font-size: 12px;">Figura: Tela de abertura de chamado</p>
+		<div class="image-container">
+		
+		  <img src="https://i.imgur.com/SCiufGT.png"  alt="Tela de Abertura de Chamado" class="zoomable-image">
+		  <div class="zoom-overlay"></div>
+		</div>
+	
+	
+	<ul class="custom-marker">Sistema de notificação de mensagens</ul>
+	 
+	 <ul  style="color: #0000FF;">O que ganhamos?</ul>
+	 <ul>
+	  <li class="justificado"> Facilita a comunicação com os servidores, através do envio de mensagens e notificações por e-mail e para os sistemas (AVA e Albanet).</li>
+	  
+	</ul>
+   	
+	<ul> <span style="color: blue;">Público-alvo:</span><span style="color: black;"> Todos os servidores da Alba</span></ul>
+	
+	 <p align="center">Agradecemos por acompanhar nosso boletim informativo. Até a próxima edição!</p>
+    
+
+    <div class="footer">
+     
+	  <p>DTI- Diretoria de Tecnologia da Informação</p>
+	  <p>(71)3115-7298</p>
+	  <p>dti@alba.ba.gov.br</p>
+	  <img src="https://i.imgur.com/BU55uvy.jpg"   style="display: block;" >
+	</div>
+	
+	
+  </div>
+</body>
+
+</html>
