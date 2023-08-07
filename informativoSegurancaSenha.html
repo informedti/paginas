@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Boletim Informativo</title>
+  <style>
+    /* Estilos CSS para o boletim informativo */
+   
+   body {
+      font-family: Arial, sans-serif;
+      
+      padding: 20px;
+      background-image: url("https://i.imgur.com/fCCSaLE.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+     
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.9);
+     
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	  margin-bottom: 20px; /* Adicione margem inferior */
+    }
+	
+	.image-container {
+	  text-align: center;
+	}
+
+	.image-container img {
+	  max-width: 100%;
+	  height: auto;
+	}
+    
+
+    h3 {
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.5;
+	  
+    }
+
+    ul {
+	 
+      line-height: 1.5;
+	  
+    }
+	
+	li:before {
+		
+		line-height: 1.5;
+    }
+  
+    .custom-marker::before {
+		content: "▶"; /* Define o marcador personalizado */
+		margin-right: 5px; /* Espaçamento entre o marcador e o texto */
+	 }
+	
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+	  font-size : 12px;
+    }
+
+    .justificado {
+      text-align: justify;
+    }
+	
+	.center {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 50%;
+	}
+	
+	.image-container {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	.zoomable-image {
+	  display: block;
+	  max-width: 100%;
+	  height: auto; /* Adicionado para manter a proporção correta da imagem */
+	}
+
+	.zoom-overlay {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background-color: rgba(0, 0, 0, 0);
+	  opacity: 0;
+	  transition: opacity 0.3s ease;
+	  pointer-events: none;
+	}
+
+	.image-container:hover .zoom-overlay {
+	  opacity: 1;
+	}
+
+	.image-container:hover .zoomable-image {
+	  transform: scale(1.7);
+	}
+
+	@media screen and (max-width: 768px) {
+	  .image-container:hover .zoomable-image {
+		transform: scale(1); /* Voltar ao tamanho original em telas menores */
+	  }
+	}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+  
+   <h3  align="center">Informativo da Diretoria de Tecnologia da Informação </h3>  
+    
+    <p class="justificado">Bem-vindo(a) ao nosso boletim informativo. Nesta edição, alertamos sobre
+					<span style="color: #08298A; font-weight: bold; font-style: italic;">Segurança e Privacidade de Senhas</span>, destacamos a importância 
+							de manter suas senhas protegidas. Confira: </p>
+    
+     
+     <ul class="custom-marker">Guardiã da sua Identidade Digital, sua senha é única e intransferível, um elo direto com sua assinatura digital.</ul>
+		 
+	 <ul  style="color: #08298A; font-weight: bold;">Como manter-se seguro e protegido?</ul>
+	 <ul>
+		  <li class="justificado"><span style="color: #08298A; font-size: 14px; font-weight: bold; font-style: italic;">Atenção:  </span>Não compartilhe suas senhas com terceiros;</li>
+		  
+		  <li class="justificado"><span style="color: #08298A; font-size: 14px; font-weight: bold; font-style: italic;">Atualização Periódica: </span>Mude suas senhas regularmente. Isso limita o tempo que um invasor teria para acessar suas contas, caso uma senha seja comprometida;</li>
+
+		  <li class="justificado"><span style="color: #08298A; font-size: 14px; font-weight: bold; font-style: italic;">Encerrando Sessões: </span>Sempre encerre as sessões após usar contas em dispositivos públicos ou compartilhados. Isso impede que outras pessoas acessem suas contas sem permissão;</li>
+
+		  <li class="justificado"><span style="color: #08298A; font-size: 14px; font-weight: bold; font-style: italic;"> Diversidade é a Chave: </span>Utilize senhas únicas para cada conta. Evite reutilizar senhas, diminuindo o risco de múltiplas violações em caso de vazamento;</li>
+
+		  <li class="justificado"><span style="color: #08298A; font-size: 14px; font-weight: bold; font-style: italic;"> Complexidade é Proteção: </span>Crie senhas robustas com uma mistura de letras maiúsculas e minúsculas, números e símbolos. Senhas previsíveis são mais suscetíveis a ataques;</li>
+
+		  <li class="justificado"><span style="color: #08298A; font-size: 14px; font-weight: bold; font-style: italic;"> Phishing: </span>Golpe online em que criminosos tentam enganar você para obter informações pessoais. Esteja atento a e-mails ou mensagens suspeitas solicitando suas informações de login. 
+		  Não clique em links suspeitos e evite fornecer suas informações a menos que esteja seguro da fonte;</li>
+		  
+		  <li class="justificado"><span style="color: #08298A; font-size: 14px; font-weight: bold; font-style: italic;">Autenticação em dois fatores (2FA): </span> Método de segurança que requer não apenas uma senha, mas também um segundo fator de autenticação para verificar a identidade do usuário (celular, token ou algo que é único para o usuário, como impressão digital ou reconhecimento facial). 
+		  Isso adiciona uma camada extra de segurança, tornando mais difícil para invasores acessar contas mesmo se tiverem a senha.</li>
+	</ul>
+	
+<!--		<ul> <span style="color: blue;">Público-alvo:</span><span style="color: black;">Todos os servidores da Alba</span></ul>  -->	 
+	 
+
+<!--	Dica-1 - utilizar o código abaixo para retirar zoom da imagem e adequar o tamanho no container  -->	 
+				<div class="container">
+				  <div class="image-container">
+					<img src="https://i.imgur.com/4IvUHZF.jpg"  alt="Senhas - Proteja Sua Identidade Digital" /> 
+				  <p align="center" style="color: #08298A; font-size: 18px; font-weight: bold;">Proteja Sua Identidade Digital</p>					
+				  </div> 
+				</div>	 
+				
+<!--	Dica-2 - utilizar o código abaixo comentado para colocar zoom da imagem e adequar o tamanho no container  -->	
+<!--		<div class="container"> -->
+<!--			<div class="image-container"> -->				
+<!--			<img src="C:\Users\900361\Desktop\fotoSenha.jpg"  alt="Cards do Trello - fluxo de atividades SGC" class="zoomable-image"/> -->
+<!--			<div class="zoom-overlay"></div> -->
+<!--			</div> -->
+<!--		  <p align="center" style="font-size: 12px;">Figura: Cards do Trello - fluxo de atividades SGC</p>	-->		
+<!--		</div> -->
+				
+	 <p align="center">Agradecemos por acompanhar nosso boletim informativo. Até a próxima edição!</p>
+    
+
+    <div class="footer">
+     
+	  <p>DTI- Diretoria de Tecnologia da Informação</p>
+	  <p>(71)3115-7298</p>
+	  <p>dti@alba.ba.gov.br</p>
+	  <img src="https://i.imgur.com/djP6Wfo.jpg"  class="img-fluid" width="100%" />
+	</div>
+	
+	
+  </div>
+</body>
+
+</html>
